@@ -11,3 +11,14 @@ let package = Package(
         .Package(url: "https://github.com/grpc/grpc-swift.git", Version(0,1,10))
     ]
 )
+
+products.append(
+    Product(
+        name: "SwiftHFC",
+        type: .Library(.Dynamic),
+        modules: [
+            "Hfc",
+            "Protos"
+        ]
+    )
+)
